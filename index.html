@@ -18,11 +18,18 @@
                                 <img src="./images/logo.png" alt="logo">
                             </a>
                             <nav class="nav-menu">
-                                <ul class="menu-header">
+                                <ul class="menu-header top-menu">
                                     <li><a href="#">Главная</a></li>
                                     <li><a href="#">Перевозчики</a></li>
                                     <li><a href="#">Заказы</a></li>
-                                    <li><a href="#" class="service">Сервис</a></li>
+                                    <li class=""><a href="#" class="dropdown service">Сервис</a>
+                                        <ul class="submenu-standart">
+                                            <li><a href="">О нас</a></li>
+                                            <li><a href="" class="service">Как это работает?</a></li>
+                                            <li><a href="">Новости</a></li>
+                                            <li><a href="">Контакты</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">Тарифы</a></li>
                                 </ul>
                                 <button class="button-entrance">Войти</button>
@@ -64,7 +71,11 @@
         <div class="footer"></div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/commonJs.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
 </body>
 </html>
