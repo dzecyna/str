@@ -1,0 +1,115 @@
+.header-block {
+  position: relative;
+  z-index: 10;
+
+  .header-menu {
+    background: #303030;
+    padding: 15px;
+
+    .block-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .nav-menu {
+        display: flex;
+        align-content: center;
+        .menu-header {
+          display: flex;
+          a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.2s;
+            :first-child{
+              margin-left: 0px;
+            }
+            &:hover {
+              color: #7b7878;
+            }
+          }
+        }
+      }
+    }
+    .service{
+      background: url(../../../str/images/right.png) no-repeat right 5px;
+      padding-right: 15px;
+    }
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {text-decoration: none;}
+.top-menu {
+  position: relative;
+}
+.top-menu:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-menu > li {
+  display: inline-block;
+  float: left;
+}
+.submenu-standart {
+  border-top: 1px solid #303030;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.07);
+  background: #303030;
+  position: absolute;
+  top: 100%;
+  left: 205px;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0,30px,0);
+  transition: .5s ease-out;
+  transform-origin: 0% 0%;
+}
+.submenu-standart {
+  min-width: 185px;
+  padding: 10px 0;
+  padding-top: 17px;
+
+}
+.dropdown-standart {position: relative;}
+.top-menu > li:hover .submenu-standart {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0,0,0);
+}
+.submenu-standart li {padding: 0 18px;}
+.submenu-standart li:hover{
+  background: #5a5a5a;
+  color: #bbbbbb;
+}
+.submenu-standart a:hover{
+  color: #bbb;
+}
+.submenu-standart li a {
+  display: block;
+  padding: 5px 0;
+  color: #fff;
+  font-size: 13px;
+  margin-left: 10px;
+}
+@media(max-width:768px) {
+  .top-menu li {
+    width: 100%;
+    height: auto!important;
+  }
+  .top-menu > li {border-bottom: 1px solid #e5e5e5;}
+  .top-menu > li > a {padding: 18px}
+  .submenu-standart {
+    position: relative;
+    display: none;
+    box-shadow: none;
+    padding: 0;
+    background: rgba(0,0,0,.02);
+  }
+  .submenu-standart {padding: 10px 0;}
+  .image-header {margin: 10px 0}
+  .top-menu > li:hover .submenu-standart {display: block;}
+}
