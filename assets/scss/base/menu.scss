@@ -26,13 +26,24 @@
             &:hover {
               color: #7b7878;
             }
+            &:active {
+              color: #7b7878;
+            }
           }
         }
       }
     }
     .service{
-      background: url(../../../str/images/right.png) no-repeat right 5px;
       padding-right: 15px;
+      background: url(../../../str/images/right.png) no-repeat right 5px;
+
+    }
+    .far {
+      padding-right: 15px;
+
+      &:hover {
+        background: url(../../../str/images/right.png) no-repeat right 5px center;
+      }
     }
   }
 }
